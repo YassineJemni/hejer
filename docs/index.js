@@ -14,7 +14,7 @@ confirmButton.addEventListener('click', () => {
 
   if (enteredPassword === correctPassword) {
     
-    window.location.href = 'https://yassinejemni.github.io/hejer/icons/icons.html';
+    window.location.href = '/hejer/icons/icons.html';
   } else {
     
     errorMessage.style.display = 'block';
@@ -27,5 +27,5 @@ confirmButton.addEventListener('click', () => {
 
 
 cancelButton.addEventListener('click', () => {
-  window.location.href = 'https://www.youtube.com/watch?v=NXiZNwjEnUA²'; 
+  window.location.href = 'https://www.youtube.com/watch?v=NXiZNwjEnUA'; 
 });
