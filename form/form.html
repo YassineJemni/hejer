@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h2>Answer the questions to continue</h2>
+        <form id="quizForm">
+            <div class="question">
+                <label for="birthday">When is my birthday?</label>
+                <input type="text" id="birthday" name="birthday" placeholder="Enter date (dd/mm/yyyy)">
+                <p></p>
+                <p></p>
+            </div>
+
+            <div class="question">
+                <label for="like">Who do I like the most?</label>
+                <div class="options">
+                    <label><input type="radio" name="like" value="3eezedin"> 3eezedin</label>
+                    <label><input type="radio" name="like" value="hejer" id="correctAnswer"> Hejer</label>
+                    <label><input type="radio" name="like" value="frayech"> Frayech</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="food">What is my favorite food?</label>
+                <div class="options">
+                    <label><input type="radio" name="food" value="sushi"> Sushi</label>
+                    <label><input type="radio" name="food" value="tacos"> Tacos bil mais</label>
+                    <label><input type="radio" name="food" value="lablebi"> Lablebi</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="pet">What is the name of my pet?</label>
+                <input type="text" id="pet" name="pet" placeholder="Enter pet name">
+                <div class="hint">Hint: It ends with "u"</div>
+                <p></p>
+                <p></p>
+            </div>
+
+            <div class="question">
+                <label for="firstMeet">When did we first meet?</label>
+                <input type="text" id="firstMeet" name="firstMeet" placeholder="Enter date (dd/mm/yyyy)">
+                <div class="hint">after miskolc</div>
+                <p></p>
+                <p></p>
+            </div>
+
+            <div class="consent-checkbox">
+                <label><input type="checkbox" name="truth" value="truth"> I consent that I say the truth and only the truth</label>
+                <label><input type="checkbox" name="yassine" value="yassine"> I really like Yassine</label>
+            </div>
+
+            <div class="error-message" id="errorMessage"></div>
+            <button type="button" class="btn" onclick="validateAnswers()">Continue</button>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
