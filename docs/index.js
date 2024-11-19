@@ -14,7 +14,7 @@ confirmButton.addEventListener('click', () => {
 
   if (enteredPassword === correctPassword) {
     
-    window.location.href = '../hejer/icons/icons.html';
+    window.location.href = './hejer/icons/icons.html';
   } else {
     
     errorMessage.style.display = 'block';
